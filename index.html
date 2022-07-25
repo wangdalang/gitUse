@@ -3,10 +3,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>海波的个人站点</title>
 </head>
 <body>
-    <h1>欢迎来到海波的网站</h1>
-    <a href="">点击学习</a>
+    <div class="container">
+        <h2 style="text-align: center;padding-top: 30px;">海波作品地址</h2>
+        <div style="margin: 20px 0 0 20px">
+            <a href="http://cloud.kunyue2019.com:30007/" target="_blank">运维平台</a>
+        </div>
+        <div style="margin: 20px 0 0 20px">
+            <a href="http://121.36.199.100:30093/" target="_blank">管控平台</a>
+        </div>
+        <div style="margin: 20px 0 0 20px">
+            <a href="http://cloud.kunyue2019.com/" target="_blank">环保平台</a>
+        </div>
+        <div style="margin: 20px 0 0 20px">
+            <a href="https://hbyjt.ineco2019.com/" target="_blank">环保一键通</a>
+        </div>
+        <div style="margin: 20px 0 0 20px">
+            <a href="http://119.3.153.71:30010/#/" target="_blank">物联网平台</a>
+        </div>
+        <div style="margin: 20px 0 0 20px">
+            <a href="http://121.36.199.100:30012/#/" target="_blank">车辆管控平台</a>
+        </div>
+    </div>
 </body>
+<script>
+    document.addEventListener('visibilitychange', function() {
+    var isHidden = document.hidden;
+    console.log(document.visibilityState)
+    if (isHidden) {
+        document.title = '快回来！！！';
+    } else {
+        document.title = '海波的个人站点';
+    }
+});
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #eee;
+    }
+    .container {
+        background-color: #fff;
+        width: 1200px;
+        margin: 0px auto;
+        height: 100vh;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
 </html>
